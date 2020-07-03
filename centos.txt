@@ -1,0 +1,6 @@
+ssh slave1 cat /root/.ssh/authorized_keys >>/root/.ssh/authorized_keys
+scp -r hadoop-2.6.5/ root@slave1:/usr/local/src/  （拷贝）
+
+./hadoop namenode -format
+u'sha1:648602ccafee:ec14d30c74ff6f09488baa5ec015db451293dac4'
+
