@@ -28,7 +28,7 @@ void *thr2_handle(void *arg)
 {
     while (1) {
         if (atomic_dec_and_test(&g_atomic)) {
-            printf("--> thread 2 : g_i = %d\n", ++g_i);
+            printf("--> thread 2 : g_i = %d\n",++g_i);
         }
         // ++g_i;
         atomic_inc(&g_atomic);
